@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/five_sentense_1.xst" -ofn "C:/Users/psyq/Desktop/veri/base/five_sentense_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc five_sentense.ucf -p xc7a100t-fgg484-2L five_sentense_1.ngc five_sentense_1.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o five_sentense_1_map.ncd five_sentense_1.ngd five_sentense_1.pcf 
+par -w -intstyle ise -ol high -mt off five_sentense_1_map.ncd five_sentense_1.ncd five_sentense_1.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml five_sentense_1.twx five_sentense_1.ncd -o five_sentense_1.twr five_sentense_1.pcf -ucf five_sentense.ucf 
+bitgen -intstyle ise -f five_sentense_1.ut five_sentense_1.ncd 

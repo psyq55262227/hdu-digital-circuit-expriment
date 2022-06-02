@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/syncBinaryReverseCounter.xst" -ofn "C:/Users/psyq/Desktop/veri/base/syncBinaryReverseCounter.syr" 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/syncBinaryReverseCounter.xst" -ofn "C:/Users/psyq/Desktop/veri/base/syncBinaryReverseCounter.syr" 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/syncBinaryReverseCounter.xst" -ofn "C:/Users/psyq/Desktop/veri/base/syncBinaryReverseCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syncBinaryReverseCounter.ucf -p xc7a100t-fgg484-2L syncBinaryReverseCounter.ngc syncBinaryReverseCounter.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o syncBinaryReverseCounter_map.ncd syncBinaryReverseCounter.ngd syncBinaryReverseCounter.pcf 
+par -w -intstyle ise -ol high -mt off syncBinaryReverseCounter_map.ncd syncBinaryReverseCounter.ncd syncBinaryReverseCounter.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml syncBinaryReverseCounter.twx syncBinaryReverseCounter.ncd -o syncBinaryReverseCounter.twr syncBinaryReverseCounter.pcf -ucf syncBinaryReverseCounter.ucf 
+bitgen -intstyle ise -f syncBinaryReverseCounter.ut syncBinaryReverseCounter.ncd 
+bitgen -intstyle ise -f syncBinaryReverseCounter.ut syncBinaryReverseCounter.ncd 
+xst -intstyle ise -ifn "D:/veri/base/syncBinaryReverseCounter.xst" -ofn "D:/veri/base/syncBinaryReverseCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syncBinaryReverseCounter.ucf -p xc7a100t-fgg484-2L syncBinaryReverseCounter.ngc syncBinaryReverseCounter.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o syncBinaryReverseCounter_map.ncd syncBinaryReverseCounter.ngd syncBinaryReverseCounter.pcf 
+par -w -intstyle ise -ol high -mt off syncBinaryReverseCounter_map.ncd syncBinaryReverseCounter.ncd syncBinaryReverseCounter.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml syncBinaryReverseCounter.twx syncBinaryReverseCounter.ncd -o syncBinaryReverseCounter.twr syncBinaryReverseCounter.pcf -ucf syncBinaryReverseCounter.ucf 
+bitgen -intstyle ise -f syncBinaryReverseCounter.ut syncBinaryReverseCounter.ncd 
+xst -intstyle ise -ifn "D:/veri/base/syncBinaryReverseCounter.xst" -ofn "D:/veri/base/syncBinaryReverseCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syncBinaryReverseCounter.ucf -p xc7a100t-fgg484-2L syncBinaryReverseCounter.ngc syncBinaryReverseCounter.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o syncBinaryReverseCounter_map.ncd syncBinaryReverseCounter.ngd syncBinaryReverseCounter.pcf 
+par -w -intstyle ise -ol high -mt off syncBinaryReverseCounter_map.ncd syncBinaryReverseCounter.ncd syncBinaryReverseCounter.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml syncBinaryReverseCounter.twx syncBinaryReverseCounter.ncd -o syncBinaryReverseCounter.twr syncBinaryReverseCounter.pcf -ucf syncBinaryReverseCounter.ucf 
+bitgen -intstyle ise -f syncBinaryReverseCounter.ut syncBinaryReverseCounter.ncd 

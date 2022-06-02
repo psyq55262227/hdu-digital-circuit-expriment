@@ -1,0 +1,3 @@
+verilog work "syncBinaryReverseCounter.v"
+verilog work "syncBinaryReverseCounter_test.v"
+verilog work "D:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

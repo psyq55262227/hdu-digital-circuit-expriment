@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L -n
+3 -fastpaths -xml digital_comparator_5.twx digital_comparator_5.ncd -o
+digital_comparator_5.twr digital_comparator_5.pcf -ucf digital_comparator_5.ucf
+
+Design file:              digital_comparator_5.ncd
+Physical constraint file: digital_comparator_5.pcf
+Device,package,speed:     xc7a100t,fgg484,C,-2L (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Y<0>           |    7.666|
+A<0>           |Y<1>           |    7.660|
+A<0>           |Y<2>           |    7.733|
+A<1>           |Y<0>           |    7.843|
+A<1>           |Y<1>           |    7.837|
+A<1>           |Y<2>           |    7.910|
+A<2>           |Y<0>           |    6.887|
+A<2>           |Y<1>           |    6.949|
+A<2>           |Y<2>           |    6.938|
+A<3>           |Y<0>           |    6.954|
+A<3>           |Y<1>           |    7.032|
+A<3>           |Y<2>           |    6.721|
+B<0>           |Y<0>           |    7.642|
+B<0>           |Y<1>           |    7.636|
+B<0>           |Y<2>           |    7.709|
+B<1>           |Y<0>           |    7.757|
+B<1>           |Y<1>           |    7.751|
+B<1>           |Y<2>           |    7.824|
+B<2>           |Y<0>           |    7.764|
+B<2>           |Y<1>           |    7.749|
+B<2>           |Y<2>           |    7.811|
+B<3>           |Y<0>           |    7.463|
+B<3>           |Y<1>           |    7.344|
+B<3>           |Y<2>           |    7.510|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 16 19:19:51 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4950 MB
+
+
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\veri\base\syncBinaryReverseCounter.ncd
+OUTFILE=D:\veri\base\syncBinaryReverseCounter.bit
+FAMILY=Artix7
+PART=xc7a100t-2lfgg484
+WORKINGDIR=D:\veri\base
+LICENSE=WebPack
+USER_INFO=__0_0_0

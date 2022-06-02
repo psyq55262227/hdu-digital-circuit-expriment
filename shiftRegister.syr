@@ -1,0 +1,381 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: shiftRegister.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "shiftRegister.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "shiftRegister"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2L-fgg484
+
+---- Source Options
+Top Module Name                    : shiftRegister
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\psyq\Desktop\veri\base\shiftRegister.v" into library work
+Parsing module <shiftRegister>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <shiftRegister>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <shiftRegister>.
+    Related source file is "C:\Users\psyq\Desktop\veri\base\shiftRegister.v".
+    Found 1-bit register for signal <GND_1_o_clk_DFF_5>.
+    Found 1-bit register for signal <GND_1_o_clk_DFF_6>.
+    Found 1-bit register for signal <GND_1_o_clk_DFF_7>.
+    Found 1-bit register for signal <GND_1_o_clk_DFF_8>.
+    Found 4-bit register for signal <q[3]_dff_6_OUT>.
+    Found 4-bit 3-to-1 multiplexer for signal <s[1]_d[3]_wide_mux_3_OUT[3:0]> created at line 35.
+    Found 1-bit tristate buffer for signal <q<3>> created at line 27
+    Found 1-bit tristate buffer for signal <q<2>> created at line 27
+    Found 1-bit tristate buffer for signal <q<1>> created at line 27
+    Found 1-bit tristate buffer for signal <q<0>> created at line 27
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   4 Tristate(s).
+Unit <shiftRegister> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 5
+ 1-bit register                                        : 4
+ 4-bit register                                        : 1
+# Multiplexers                                         : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 4-bit 3-to-1 multiplexer                              : 1
+# Tristates                                            : 4
+ 1-bit tristate buffer                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 4-bit 3-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <GND_1_o_clk_DFF_6> in Unit <shiftRegister> is equivalent to the following 3 FFs/Latches, which will be removed : <GND_1_o_clk_DFF_5> <GND_1_o_clk_DFF_7> <GND_1_o_clk_DFF_8> 
+WARNING:Xst:2042 - Unit shiftRegister: 4 internal tristates are replaced by logic (pull-up yes): N2, N3, N4, N5.
+
+Optimizing unit <shiftRegister> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block shiftRegister, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : shiftRegister.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 10
+#      INV                         : 1
+#      LUT4                        : 1
+#      LUT6                        : 8
+# FlipFlops/Latches                : 5
+#      FD                          : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 7
+#      OBUFT                       : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tfgg484-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               5  out of  126800     0%  
+ Number of Slice LUTs:                   10  out of  63400     0%  
+    Number used as Logic:                10  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     10
+   Number with an unused Flip Flop:       5  out of     10    50%  
+   Number with an unused LUT:             0  out of     10     0%  
+   Number of fully used LUT-FF pairs:     5  out of     10    50%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    285     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 5     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 1.448ns (Maximum Frequency: 690.465MHz)
+   Minimum input arrival time before clock: 1.421ns
+   Maximum output required time after clock: 1.244ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.448ns (frequency: 690.465MHz)
+  Total number of paths / destination ports: 17 / 5
+-------------------------------------------------------------------------
+Delay:               1.448ns (Levels of Logic = 2)
+  Source:            q_3 (FF)
+  Destination:       q_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: q_3 to q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.398   0.468  q_3 (q_3)
+     LUT6:I4->O            1   0.105   0.357  Mmux_n003211 (Mmux_n00321)
+     LUT6:I5->O            1   0.105   0.000  Mmux_n003212 (n0032<0>)
+     FD:D                      0.015          q_0
+    ----------------------------------------
+    Total                      1.448ns (0.623ns logic, 0.825ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 31 / 5
+-------------------------------------------------------------------------
+Offset:              1.421ns (Levels of Logic = 3)
+  Source:            oe (PAD)
+  Destination:       q_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: oe to q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.001   0.838  oe_IBUF (oe_IBUF)
+     LUT6:I0->O            1   0.105   0.357  Mmux_n003221 (Mmux_n00322)
+     LUT6:I5->O            1   0.105   0.000  Mmux_n003222 (n0032<1>)
+     FD:D                      0.015          q_1
+    ----------------------------------------
+    Total                      1.421ns (0.226ns logic, 1.195ns route)
+                                       (15.9% logic, 84.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              1.244ns (Levels of Logic = 2)
+  Source:            GND_1_o_clk_DFF_6 (FF)
+  Destination:       q<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: GND_1_o_clk_DFF_6 to q<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.398   0.367  GND_1_o_clk_DFF_6 (GND_1_o_clk_DFF_6)
+     INV:I->O              4   0.123   0.356  GND_1_o_clk_DFF_5_inv1_INV_0 (GND_1_o_clk_DFF_5_inv)
+     OBUFT:T->O                0.000          q_3_OBUFT (q<3>)
+    ----------------------------------------
+    Total                      1.244ns (0.521ns logic, 0.723ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.448|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.48 secs
+ 
+--> 
+
+Total memory usage is 4681016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

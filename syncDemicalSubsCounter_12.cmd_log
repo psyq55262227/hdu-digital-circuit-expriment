@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/syncDemicalSubsCounter_12.xst" -ofn "C:/Users/psyq/Desktop/veri/base/syncDemicalSubsCounter_12.syr" 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/syncDemicalSubsCounter_12.xst" -ofn "C:/Users/psyq/Desktop/veri/base/syncDemicalSubsCounter_12.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syncDemicalSubsCounter_12.ucf -p xc7a100t-fgg484-2L syncDemicalSubsCounter_12.ngc syncDemicalSubsCounter_12.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o syncDemicalSubsCounter_12_map.ncd syncDemicalSubsCounter_12.ngd syncDemicalSubsCounter_12.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syncDemicalSubsCounter_12.ucf -p xc7a100t-fgg484-2L syncDemicalSubsCounter_12.ngc syncDemicalSubsCounter_12.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syncDemicalSubsCounter_12.ucf -p xc7a100t-fgg484-2L syncDemicalSubsCounter_12.ngc syncDemicalSubsCounter_12.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o syncDemicalSubsCounter_12_map.ncd syncDemicalSubsCounter_12.ngd syncDemicalSubsCounter_12.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syncDemicalSubsCounter_12.ucf -p xc7a100t-fgg484-2L syncDemicalSubsCounter_12.ngc syncDemicalSubsCounter_12.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o syncDemicalSubsCounter_12_map.ncd syncDemicalSubsCounter_12.ngd syncDemicalSubsCounter_12.pcf 
+par -w -intstyle ise -ol high -mt off syncDemicalSubsCounter_12_map.ncd syncDemicalSubsCounter_12.ncd syncDemicalSubsCounter_12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml syncDemicalSubsCounter_12.twx syncDemicalSubsCounter_12.ncd -o syncDemicalSubsCounter_12.twr syncDemicalSubsCounter_12.pcf -ucf syncDemicalSubsCounter_12.ucf 
+bitgen -intstyle ise -f syncDemicalSubsCounter_12.ut syncDemicalSubsCounter_12.ncd 

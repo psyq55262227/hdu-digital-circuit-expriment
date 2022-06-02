@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/basicRegister.xst" -ofn "C:/Users/psyq/Desktop/veri/base/basicRegister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basicRegister.ucf -p xc7a100t-fgg484-2L basicRegister.ngc basicRegister.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o basicRegister_map.ncd basicRegister.ngd basicRegister.pcf 
+par -w -intstyle ise -ol high -mt off basicRegister_map.ncd basicRegister.ncd basicRegister.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml basicRegister.twx basicRegister.ncd -o basicRegister.twr basicRegister.pcf -ucf basicRegister.ucf 
+bitgen -intstyle ise -f basicRegister.ut basicRegister.ncd 

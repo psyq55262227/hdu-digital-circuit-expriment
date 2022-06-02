@@ -1,0 +1,10 @@
+Command line:
+   binaryAddSubsOperator_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1748
+
+Sun Dec 12 19:53:14 2021
+
+
+ Elaboration Time: 0.125 sec

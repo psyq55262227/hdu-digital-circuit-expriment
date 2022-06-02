@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Dec 17 19:22:45 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dn" LOCATE = SITE "V3" LEVEL 1;
+COMP "en" LOCATE = SITE "T4" LEVEL 1;
+COMP "clk" LOCATE = SITE "R4" LEVEL 1;
+COMP "mr" LOCATE = SITE "T3" LEVEL 1;
+COMP "co" LOCATE = SITE "F1" LEVEL 1;
+COMP "load" LOCATE = SITE "U3" LEVEL 1;
+COMP "d<0>" LOCATE = SITE "Y6" LEVEL 1;
+COMP "d<1>" LOCATE = SITE "Y4" LEVEL 1;
+COMP "q<0>" LOCATE = SITE "G2" LEVEL 1;
+COMP "d<2>" LOCATE = SITE "W4" LEVEL 1;
+COMP "q<1>" LOCATE = SITE "H2" LEVEL 1;
+COMP "d<3>" LOCATE = SITE "V4" LEVEL 1;
+COMP "q<2>" LOCATE = SITE "J1" LEVEL 1;
+COMP "q<3>" LOCATE = SITE "K1" LEVEL 1;
+SCHEMATIC END;
+

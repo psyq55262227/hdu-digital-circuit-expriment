@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/adder_6.xst" -ofn "C:/Users/psyq/Desktop/veri/base/adder_6.syr" 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/adder_6.xst" -ofn "C:/Users/psyq/Desktop/veri/base/adder_6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_6.ucf -p xc7a100t-fgg484-2L adder_6.ngc adder_6.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o adder_6_map.ncd adder_6.ngd adder_6.pcf 
+par -w -intstyle ise -ol high -mt off adder_6_map.ncd adder_6.ncd adder_6.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml adder_6.twx adder_6.ncd -o adder_6.twr adder_6.pcf -ucf adder_6.ucf 
+bitgen -intstyle ise -f adder_6.ut adder_6.ncd 
+xst -intstyle ise -ifn "D:/veri/base/adder_6.xst" -ofn "D:/veri/base/adder_6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_6.ucf -p xc7a100t-fgg484-2L adder_6.ngc adder_6.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o adder_6_map.ncd adder_6.ngd adder_6.pcf 
+par -w -intstyle ise -ol high -mt off adder_6_map.ncd adder_6.ncd adder_6.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml adder_6.twx adder_6.ncd -o adder_6.twr adder_6.pcf -ucf adder_6.ucf 
+bitgen -intstyle ise -f adder_6.ut adder_6.ncd 

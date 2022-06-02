@@ -1,0 +1,24 @@
+// mr=1, 清零, q=0000
+// mr=0, en=0, 保持
+// mr=0, en=1, clk↑, 减一计数
+NET "mr" LOC = AA4;
+NET "clk" LOC = R4;
+NET "en" LOC = T3;
+NET "q[3]" LOC = K1;
+NET "q[2]" LOC = J1;
+NET "q[1]" LOC = H2;
+NET "q[0]" LOC = G2;
+NET "co" LOC = F1;
+
+NET "mr" IOSTANDARD = LVCMOS18;
+NET "en" IOSTANDARD = LVCMOS18;
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "q[3]" IOSTANDARD = LVCMOS18;
+NET "q[2]" IOSTANDARD = LVCMOS18;
+NET "q[1]" IOSTANDARD = LVCMOS18;
+NET "q[0]" IOSTANDARD = LVCMOS18;
+NET "co" IOSTANDARD = LVCMOS18;
+
+NET "mr" PULLDOWN;
+NET "en" PULLDOWN;
+NET "clk" PULLDOWN;

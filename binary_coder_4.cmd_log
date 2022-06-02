@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/binary_coder_4.xst" -ofn "C:/Users/psyq/Desktop/veri/base/binary_coder_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binary_coder_4.ucf -p xc7a100t-fgg484-2L binary_coder_4.ngc binary_coder_4.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o binary_coder_4_map.ncd binary_coder_4.ngd binary_coder_4.pcf 
+par -w -intstyle ise -ol high -mt off binary_coder_4_map.ncd binary_coder_4.ncd binary_coder_4.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml binary_coder_4.twx binary_coder_4.ncd -o binary_coder_4.twr binary_coder_4.pcf -ucf binary_coder_4.ucf 
+bitgen -intstyle ise -f binary_coder_4.ut binary_coder_4.ncd 

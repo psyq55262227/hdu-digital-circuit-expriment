@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 16 19:54:13 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "en" LOCATE = SITE "T3" LEVEL 1;
+COMP "clk" LOCATE = SITE "R4" LEVEL 1;
+COMP "mr" LOCATE = SITE "AA4" LEVEL 1;
+COMP "co" LOCATE = SITE "F1" LEVEL 1;
+COMP "q<0>" LOCATE = SITE "G2" LEVEL 1;
+COMP "q<1>" LOCATE = SITE "H2" LEVEL 1;
+COMP "q<2>" LOCATE = SITE "J1" LEVEL 1;
+COMP "q<3>" LOCATE = SITE "K1" LEVEL 1;
+SCHEMATIC END;
+

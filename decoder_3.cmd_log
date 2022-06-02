@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/decoder_3.xst" -ofn "C:/Users/psyq/Desktop/veri/base/decoder_3.syr" 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/decoder_3.xst" -ofn "C:/Users/psyq/Desktop/veri/base/decoder_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc decoder_3.ucf -p xc7a100t-fgg484-2L decoder_3.ngc decoder_3.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o decoder_3_map.ncd decoder_3.ngd decoder_3.pcf 
+par -w -intstyle ise -ol high -mt off decoder_3_map.ncd decoder_3.ncd decoder_3.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml decoder_3.twx decoder_3.ncd -o decoder_3.twr decoder_3.pcf -ucf decoder_3.ucf 
+bitgen -intstyle ise -f decoder_3.ut decoder_3.ncd 

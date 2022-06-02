@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\veri\base\D.ncd
+OUTFILE=D:\veri\base\D.bit
+FAMILY=Artix7
+PART=xc7a100t-2lfgg484
+WORKINGDIR=D:\veri\base
+LICENSE=WebPack
+USER_INFO=__0_0_0

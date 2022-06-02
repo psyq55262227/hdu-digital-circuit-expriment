@@ -1,0 +1,20 @@
+// clk=0,保持
+// clk↑，jk=00,保持
+// clk↑，jk=01,置零，q=0
+// clk↑，jk=10,置1，q=1
+// clk↑，jk=11,翻转，q=!q
+NET "clk" LOC = R4;
+NET "j" LOC = T3;
+NET "k" LOC = U3;
+NET "q" LOC = K1;
+NET "q_" LOC = J1;
+
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "j" IOSTANDARD = LVCMOS18;
+NET "k" IOSTANDARD = LVCMOS18;
+NET "q" IOSTANDARD = LVCMOS18;
+NET "q_" IOSTANDARD = LVCMOS18;
+
+NET "clk" PULLDOWN;
+NET "j" PULLDOWN;
+NET "k" PULLDOWN;

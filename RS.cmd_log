@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/RS.xst" -ofn "C:/Users/psyq/Desktop/veri/base/RS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RS.ucf -p xc7a100t-fgg484-2L RS.ngc RS.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o RS_map.ncd RS.ngd RS.pcf 
+par -w -intstyle ise -ol high -mt off RS_map.ncd RS.ncd RS.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml RS.twx RS.ncd -o RS.twr RS.pcf -ucf RS.ucf 
+bitgen -intstyle ise -f RS.ut RS.ncd 

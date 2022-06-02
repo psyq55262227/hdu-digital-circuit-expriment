@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/binaryAddSubsOperator.xst" -ofn "C:/Users/psyq/Desktop/veri/base/binaryAddSubsOperator.syr" 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/binaryAddSubsOperator.xst" -ofn "C:/Users/psyq/Desktop/veri/base/binaryAddSubsOperator.syr" 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/binaryAddSubsOperator.xst" -ofn "C:/Users/psyq/Desktop/veri/base/binaryAddSubsOperator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binaryAddSubsOperator.ucf -p xc7a100t-fgg484-2L binaryAddSubsOperator.ngc binaryAddSubsOperator.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o binaryAddSubsOperator_map.ncd binaryAddSubsOperator.ngd binaryAddSubsOperator.pcf 
+par -w -intstyle ise -ol high -mt off binaryAddSubsOperator_map.ncd binaryAddSubsOperator.ncd binaryAddSubsOperator.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml binaryAddSubsOperator.twx binaryAddSubsOperator.ncd -o binaryAddSubsOperator.twr binaryAddSubsOperator.pcf -ucf binaryAddSubsOperator.ucf 
+bitgen -intstyle ise -f binaryAddSubsOperator.ut binaryAddSubsOperator.ncd 

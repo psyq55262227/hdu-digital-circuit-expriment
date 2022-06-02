@@ -1,0 +1,41 @@
+// mr=1	异步清零，q=0000,co=0
+// mr=0	
+//		load=1,clk上跳时装数
+//		load=0&&en=0,保持
+//		load=0&&en=1&&dn=0,clk上跳时+1
+//		load=0&&en=1&&dn=1,clk上跳时-1
+NET "mr" LOC = T3;
+NET "load" LOC = U3;
+NET "en" LOC = T4;
+NET "dn" LOC = V3;
+NET "clk" LOC = R4;
+NET "d[3]" LOC = V4;
+NET "d[2]" LOC = W4;
+NET "d[1]" LOC = Y4;
+NET "d[0]" LOC = Y6;
+NET "q[3]" LOC = K1;
+NET "q[2]" LOC = J1;
+NET "q[1]" LOC = H2;
+NET "q[0]" LOC = G2;
+NET "co" LOC = F1;
+
+NET "mr" IOSTANDARD = LVCMOS18;
+NET "load" IOSTANDARD = LVCMOS18;
+NET "en" IOSTANDARD = LVCMOS18;
+NET "dn" IOSTANDARD = LVCMOS18;
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "d[3]" IOSTANDARD = LVCMOS18;
+NET "d[2]" IOSTANDARD = LVCMOS18;
+NET "d[1]" IOSTANDARD = LVCMOS18;
+NET "d[0]" IOSTANDARD = LVCMOS18;
+NET "q[3]" IOSTANDARD = LVCMOS18;
+NET "q[2]" IOSTANDARD = LVCMOS18;
+NET "q[1]" IOSTANDARD = LVCMOS18;
+NET "q[0]" IOSTANDARD = LVCMOS18;
+NET "co" IOSTANDARD = LVCMOS18;
+
+NET "mr" PULLDOWN;
+NET "load" PULLDOWN;
+NET "en" PULLDOWN;
+NET "dn" PULLDOWN;
+NET "clk" PULLDOWN;

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/shiftRegister.xst" -ofn "C:/Users/psyq/Desktop/veri/base/shiftRegister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc shiftRegister.ucf -p xc7a100t-fgg484-2L shiftRegister.ngc shiftRegister.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shiftRegister_map.ncd shiftRegister.ngd shiftRegister.pcf 
+par -w -intstyle ise -ol high -mt off shiftRegister_map.ncd shiftRegister.ncd shiftRegister.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml shiftRegister.twx shiftRegister.ncd -o shiftRegister.twr shiftRegister.pcf -ucf shiftRegister.ucf 
+bitgen -intstyle ise -f shiftRegister.ut shiftRegister.ncd 

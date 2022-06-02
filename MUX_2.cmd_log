@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/MUX_2.xst" -ofn "C:/Users/psyq/Desktop/veri/base/MUX_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MUX_2.ucf -p xc7a100t-fgg484-2L MUX_2.ngc MUX_2.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MUX_2_map.ncd MUX_2.ngd MUX_2.pcf 
+par -w -intstyle ise -ol high -mt off MUX_2_map.ncd MUX_2.ncd MUX_2.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml MUX_2.twx MUX_2.ncd -o MUX_2.twr MUX_2.pcf -ucf MUX_2.ucf 
+bitgen -intstyle ise -f MUX_2.ut MUX_2.ncd 
+xst -intstyle ise -ifn "C:/Users/psyq/Desktop/veri/base/MUX_2.xst" -ofn "C:/Users/psyq/Desktop/veri/base/MUX_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MUX_2.ucf -p xc7a100t-fgg484-2L MUX_2.ngc MUX_2.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MUX_2_map.ncd MUX_2.ngd MUX_2.pcf 
+par -w -intstyle ise -ol high -mt off MUX_2_map.ncd MUX_2.ncd MUX_2.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml MUX_2.twx MUX_2.ncd -o MUX_2.twr MUX_2.pcf -ucf MUX_2.ucf 
+bitgen -intstyle ise -f MUX_2.ut MUX_2.ncd 

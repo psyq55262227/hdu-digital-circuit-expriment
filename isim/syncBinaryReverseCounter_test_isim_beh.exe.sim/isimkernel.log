@@ -1,0 +1,28 @@
+Command line:
+   syncBinaryReverseCounter_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  8906
+
+Fri Dec 17 19:50:44 2021
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5158.17 Meg
+
+ Total Signals          : 21
+ Total Nets             : 27
+ Total Signal Drivers   : 13
+ Total Blocks           : 5
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 141
+
+ Total Simulation Time: 0.421875 sec
+
+ Current Memory Usage: 4686.32 Meg
+
+Fri Dec 17 20:08:37 2021
+

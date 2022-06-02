@@ -1,0 +1,36 @@
+// oe=0,高阻，禁止输出
+// oe=1,clr=1,清零
+// oe=1,clr=0,clk=0，保持
+// oe=1,clr=0,clk上跳，置入数据
+NET "oe" LOC = T3;
+NET "clr" LOC = U3;
+NET "clk" LOC = R4;
+NET "d[3]" LOC = T4;
+NET "d[2]" LOC = V3;
+NET "d[1]" LOC = V4;
+NET "d[0]" LOC = W4;
+NET "q[3]" LOC = K1;
+NET "q[2]" LOC = J1;
+NET "q[1]" LOC = H2;
+NET "q[0]" LOC = G2;
+
+NET "oe" IOSTANDARD = LVCMOS18;
+NET "clr" IOSTANDARD = LVCMOS18;
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "d[3]" IOSTANDARD = LVCMOS18;
+NET "d[2]" IOSTANDARD = LVCMOS18;
+NET "d[1]" IOSTANDARD = LVCMOS18;
+NET "d[0]" IOSTANDARD = LVCMOS18;
+NET "q[3]" IOSTANDARD = LVCMOS18;
+NET "q[2]" IOSTANDARD = LVCMOS18;
+NET "q[1]" IOSTANDARD = LVCMOS18;
+NET "q[0]" IOSTANDARD = LVCMOS18;
+
+NET "oe" PULLDOWN;
+NET "clr" PULLDOWN;
+NET "clk" PULLDOWN;
+NET "d[3]" PULLDOWN;
+NET "d[2]" PULLDOWN;
+NET "d[1]" PULLDOWN;
+NET "d[0]" PULLDOWN;
+

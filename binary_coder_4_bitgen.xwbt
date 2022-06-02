@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\psyq\Desktop\veri\base\binary_coder_4.ncd
+OUTFILE=C:\Users\psyq\Desktop\veri\base\binary_coder_4.bit
+FAMILY=Artix7
+PART=xc7a100t-2lfgg484
+WORKINGDIR=C:\Users\psyq\Desktop\veri\base
+LICENSE=WebPack
+USER_INFO=__0_0_0

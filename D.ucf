@@ -1,0 +1,23 @@
+// pre=1&clr=0 -> 同步复位，q=1
+// pre=0&clr=1 -> 同步清零，q=0
+// pre=0&clr=0&clk=0 -> 保持
+// pre=0&clr=0&clr↑, q=d=0 -> q=0,置零
+// pre=0&clr=0&clr↑, q=d=1 -> q=1,置1
+NET "pre" LOC = T3;
+NET "clr" LOC = U3;
+NET "clk" LOC = R4;
+NET "d" LOC = T4;
+NET "q" LOC = K1;
+NET "q_" LOC = J1;
+
+NET "pre" IOSTANDARD = LVCMOS18;
+NET "clr" IOSTANDARD = LVCMOS18;
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "d" IOSTANDARD = LVCMOS18;
+NET "q" IOSTANDARD = LVCMOS18;
+NET "q_" IOSTANDARD = LVCMOS18;
+
+NET "pre" PULLDOWN;
+NET "clr" PULLDOWN;
+NET "clk" PULLDOWN;
+NET "d" PULLDOWN;
